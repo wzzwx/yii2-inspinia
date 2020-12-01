@@ -1,0 +1,6 @@
+.select2-container--open {
+    z-index: 10000;
+}
+#page-wrapper {
+  padding-bottom: 40px;
+}

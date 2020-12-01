@@ -1,0 +1,23 @@
+{
+    "name": "wzzwx/yii2-inspinia",
+    "description": "Wrapper inspinia theme",
+    "type": "library",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "wangzheng",
+            "email": "wz152309246@163.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "lkk/yii2-inspinia": "^1.3",
+        "ethercap/watermark": "^1.0",
+        "dmstr/yii2-adminlte-asset": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "wzzwx\\yii2Inspinia\\": "/src"
+        }
+    }
+}

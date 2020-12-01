@@ -1,0 +1,5 @@
+.kv-container-from, .kv-container-to {
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: transparent;
+}
