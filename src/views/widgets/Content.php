@@ -11,10 +11,12 @@ class Content extends Widget
     public function init()
     {
         parent::init();
-        $this->replaceTags = [
-            'before_nav' => '',
-            'alert' => Alert::widget(),
-        ];
+        if (empty($this->replaceTags)) {
+            $this->replaceTags = [
+                'before_nav' => '',
+                'alert' => Alert::widget(),
+            ];
+        }
     }
 
     public function runInternal()

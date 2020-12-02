@@ -9,10 +9,12 @@ class Footer extends Widget
     public function init()
     {
         parent::init();
-        $this->replaceTags = [
-            'right' => '<b>Version</b> 2.0',
-            'left' => '<strong>&copy;2014- '.date('Y').' 以太资本 京ICP备14028208号</strong>',
-        ];
+        if (empty($this->replaceTags)) {
+            $this->replaceTags = [
+                'right' => '<b>Version</b> 2.0',
+                'left' => '<strong>&copy;2018- '.date('Y').' callmewz 京ICP备19042689号-1</strong>',
+            ];
+        }
     }
 
     public function runInternal()

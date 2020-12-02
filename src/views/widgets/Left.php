@@ -9,10 +9,12 @@ class Left extends Widget
     public function init()
     {
         parent::init();
-        $this->replaceTags = [
-            'search_form' => '',
-            'dropdown' => '',
-        ];
+        if (empty($this->replaceTags)) {
+            $this->replaceTags = [
+                'search_form' => '',
+                'dropdown' => '',
+            ];
+        }
     }
 
     public function runInternal()

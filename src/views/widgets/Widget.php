@@ -14,7 +14,7 @@ class Widget extends BaseWidget
     public $controllerCtx;
 
     public $extraView = [];
-    protected $replaceTags = [];
+    public $replaceTags = [];
 
     protected $detail;
 
