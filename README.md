@@ -11,12 +11,36 @@
 
 ```
 'view' => [
-    'theme' => [
-        'class' => 'wzzwx\yii2Inspinia\Theme',
-            'node' => 'dee',
-            'nowrap' => !YII_DEBUG,
+            'theme' => [
+                'class' => 'wzzwx\yii2Inspinia\Theme',
+                'nowrap' => !YII_DEBUG,
+                'menuItems' => [
+                    [
+                       'label' => '自动回复管理',
+                       'items' => [
+                           [
+                               'label' => '自动回复消息',
+                               'url' => '/wx-reply',
+                           ],
+                           [
+                               'label' => '规则管理',
+                               'url' => '/wx-reply-rule',
+                           ],
+                       ],
+                   ],
+                   [
+                       'label' => 'gii测试',
+                       'url' => '/giitest',
+                   ],
+                 // footer 设置
+                'footer' => [
+                    'replaceTags' => [
+                        'right' => '<b>Version</b> 2.0',
+                        'left' => '<strong>&copy;2018- '.date('Y').' callmewz 京ICP备19042689号-1</strong>',
+                    ],
+                ],
+            ],
         ],
-    ],
 ```
 ### 可用配置
 - content  
