@@ -13,7 +13,7 @@ class Header extends Widget
             $this->replaceTags = [
                 'nav_left' => '',
                 'nav_right' => '<ul class="nav navbar-top-links navbar-right"><li>
-                    <a href="/sso/account/logout">
+                    <a href="/site/logout">
                         <i class="fa fa-sign-out"></i> Log out
                     </a>
                 </li></ul>',
