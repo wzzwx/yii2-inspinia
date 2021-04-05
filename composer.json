@@ -1,7 +1,9 @@
 {
     "name": "wzzwx/yii2-inspinia",
+    "type": "yii2-extension",
     "description": "Wrapper inspinia theme",
-    "type": "library",
+    "keywords": ["yii2", "inspinia"],
+    "license": "MIT",
     "minimum-stability": "stable",
     "authors": [
         {
